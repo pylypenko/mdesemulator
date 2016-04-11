@@ -1,0 +1,12 @@
+/.settings
+/target/tomcat
+/target/classes
+/target/failsafe-reports
+/target/generated-sources
+/target/generated-test-sources
+/target/m2e-wtp
+/target/maven-archiver
+/target/maven-status
+/target/mdes-jaxrs-0.0.1-SNAPSHOT
+/target/surefire
+/target/test-classes
