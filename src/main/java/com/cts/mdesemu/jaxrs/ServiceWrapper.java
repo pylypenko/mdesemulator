@@ -27,7 +27,10 @@ public abstract class ServiceWrapper<T, V> {
 			}
 		} catch (RejectingException re) {
 			// TODO remove when common superclass object appears
-			return this.responseOnError(request, re);
+			V response = this.responseOnError(request, re);
+			this.logger.info("Rejected request.\n\tRequest details: " + request
+					+ "\n\tResponse details = " + response);
+			return response;
 		}
 	}
 
